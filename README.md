@@ -2,26 +2,62 @@
 <a href="https://rishabh0111.github.io/">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-    <img alt="Rishabh Sharma, AI engineer. I ship AI systems to production and measure them before I trust them." src="assets/banner-light.svg" width="100%">
+    <img alt="Rishabh Sharma. I build LLM systems and the plumbing under them, and write about what breaks." src="assets/banner-light.svg" width="100%">
   </picture>
 </a>
 
 <p align="center">
-  <a href="https://rishabh0111.github.io/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-1E768F?style=flat&logo=githubpages&logoColor=white"></a>
-  <a href="https://rishabh0111.github.io/blogs/"><img alt="Blog" src="https://img.shields.io/badge/Blog-2E3440?style=flat&logo=rss&logoColor=white"></a>
+  <a href="https://rishabh0111.github.io/blogs/"><img alt="Blog" src="https://img.shields.io/badge/Blog-1E768F?style=flat&logo=rss&logoColor=white"></a>
+  <a href="https://rishabh0111.github.io/"><img alt="Website" src="https://img.shields.io/badge/Website-2E3440?style=flat&logo=githubpages&logoColor=white"></a>
   <a href="https://linkedin.com/in/rishabh0111"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat"></a>
   <a href="mailto:rishabhsharma8912@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white"></a>
 </p>
 
-AI engineer in Gurugram. I build LLM systems and the backends and
-infrastructure under them, and I measure them before I trust them. I trained
-in information security, so I ask how something breaks before I ask when it
-ships.
+Hi, I'm Rishabh, a software engineer from India. I work on LLM systems and
+the backends and infrastructure underneath them, and I care a lot about one
+question: *how do you know it works?* So I build things in the open, measure
+them, and write up what I got wrong along the way.
 
-By day I'm an AI engineer at Kleeto. The rest of the time I build things
-in the open, write about what broke, and play chess.
+If any of it is useful to you, take it. If something looks wrong, open an
+issue; I'd rather know.
 
-## Projects
+## Learn with me
+
+Two free series on my blog, written the way I wish someone had explained
+them to me. Diagrams, worked examples, no paywall, no sign-up.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Data Structures & Algorithms, Pattern by Pattern](https://rishabh0111.github.io/blogs/dsa-the-method/)
+
+19 parts, from arrays and hashing to 2-D dynamic programming. Each one
+teaches a pattern you can recognise in a problem you haven't seen, rather
+than a list of solutions to memorise.
+
+[Start with part 1 →](https://rishabh0111.github.io/blogs/dsa-the-method/)
+
+</td>
+<td width="50%" valign="top">
+
+### [System Design](https://rishabh0111.github.io/blogs/system-design-foundations/)
+
+10 parts, from the first principles to caching, queues, databases and
+distributed primitives. Each part answers a real "why would you do that?"
+rather than listing boxes on a whiteboard.
+
+[Start with part 1 →](https://rishabh0111.github.io/blogs/system-design-foundations/)
+
+</td>
+</tr>
+</table>
+
+## Things I've built
+
+Every one of these is open source, runs with `docker compose up` or one
+command, and has a write-up explaining the decisions, including the ones I
+reversed.
 
 <table>
 <tr>
@@ -29,9 +65,9 @@ in the open, write about what broke, and play chess.
 
 ### [Nivara Desk](https://nivara-landing-iota.vercel.app)
 
-A help desk many companies share, where the AI answers only when it should.
-
-**93.6%** right call on 600 recorded tickets · **0** prompt injections in CI · evals re-run for **$0**
+A help desk many companies share, where the AI answers only when it's sure
+and hands everything else to a person. A good read if you're figuring out
+evals, guardrails or multi-tenant Postgres.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
@@ -40,16 +76,16 @@ A help desk many companies share, where the AI answers only when it should.
 ![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=flat&logo=qdrant&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 
-[AI layer](https://github.com/rishabh0111/nivara-ai) · [API](https://github.com/rishabh0111/nivara-api-nestjs) · [Front ends](https://github.com/rishabh0111/nivara-web-nextjs) · [Live app](https://nivara-web-nextjs.vercel.app/dashboard)
+[AI layer](https://github.com/rishabh0111/nivara-ai) · [API](https://github.com/rishabh0111/nivara-api-nestjs) · [Front ends](https://github.com/rishabh0111/nivara-web-nextjs) · [Try it](https://nivara-web-nextjs.vercel.app/dashboard) · [Evals write-up](https://rishabh0111.github.io/blogs/evals-for-an-llm-agent/)
 
 </td>
 <td width="50%" valign="top">
 
 ### [Nostro](https://github.com/rishabh0111/nostro-ledger)
 
-A multi-tenant ledger where the database refuses unbalanced, duplicate and cross-tenant writes.
-
-**211** tests on every push · **3** services · **0** database errors under contended load
+A double-entry ledger in Java where the database itself refuses a write that
+doesn't balance. Useful if you want to see the transactional outbox, Kafka
+and read-your-writes done end to end.
 
 ![Java 21](https://img.shields.io/badge/Java_21-ED8B00?style=flat&logo=openjdk&logoColor=white)
 ![Spring Boot 4](https://img.shields.io/badge/Spring_Boot_4-6DB33F?style=flat&logo=springboot&logoColor=white)
@@ -66,9 +102,9 @@ A multi-tenant ledger where the database refuses unbalanced, duplicate and cross
 
 ### [LinkPulse](https://github.com/rishabh0111/linkpulse)
 
-A small app run like a production platform, then broken on purpose on real AWS.
-
-**12 h** on AWS EKS for **$3.32** · **13** production-only defects fixed · **13** alerts proven by chaos
+A tiny URL shortener used as an excuse to run a real platform: Terraform,
+Kubernetes, GitOps and monitoring, then breaking it on purpose on AWS to see
+which alerts actually fire. Cost me $3.32.
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat&logo=terraform&logoColor=white)
@@ -83,53 +119,48 @@ A small app run like a production platform, then broken on purpose on real AWS.
 
 ### [Webhook Delivery Engine](https://github.com/rishabh0111/webhook-delivery-engine)
 
-Sends webhooks and never loses one, even when Redis is wiped mid-load.
-
-**0 of 50,000** events lost · **5,000/min** at **47 ms** p95 · **0** double sends
+Sends webhooks and never quietly loses one, even if you wipe Redis halfway
+through. Self-hostable, with retries, signing and a dead-letter queue you
+can replay from a dashboard.
 
 ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat&logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat&logo=redis&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 
-[Source](https://github.com/rishabh0111/webhook-delivery-engine) · [Live demo](https://webhook-delivery-engine-on21.onrender.com/dashboard) · [Write-up](https://rishabh0111.github.io/blogs/webhook-delivery-engine/)
+[Source](https://github.com/rishabh0111/webhook-delivery-engine) · [Try it](https://webhook-delivery-engine-on21.onrender.com/dashboard) · [Write-up](https://rishabh0111.github.io/blogs/webhook-delivery-engine/)
 
 </td>
 </tr>
 </table>
 
+**Small tools and notes you might find handy:**
+[cover-kit](https://github.com/rishabh0111/cover-kit) turns a JSON spec into
+an animated GIF cover for a technical post ·
+[the-essential-150](https://github.com/rishabh0111/the-essential-150) is a
+curated set of DSA prerequisites and interview patterns ·
+[ComputerNetworKing](https://github.com/rishabh0111/ComputerNetworKing) covers
+networking from the basics up
+
 <details>
-<summary><b>Five times a measurement changed my mind</b></summary>
+<summary><b>Five things I learned the hard way</b></summary>
 <br>
 
-- **The durability test found the durability bug.** Wiping Redis left 23,536
-  webhook events undelivered until a restart. A watchdog fixed it; the same
-  test now loses 0 of 50,000.
-- **An automated grader was dropped.** It agreed with human labels at
-  κ = 0.14, so its score was demoted rather than published.
-- **Two alerts could never fire.** They were loaded, healthy and silent.
-  Found by causing the failures on purpose, written up as a blameless
-  postmortem, and the experiments now run in CI.
-- **Search leaked ranking signals between tenants.** One ablation row looked
-  wrong; it traced back to BM25 statistics computed across every tenant.
-  Fixed, and pinned with a regression test.
-- **Two standard retrieval stages were deleted.** Reranking didn't move
-  recall on the corpus, so it went; the model router stayed because it
-  measured 26–39% cheaper with no accuracy loss.
+- **Test the claim you're proudest of.** The durability test on my webhook
+  engine found a durability bug: wiping Redis left thousands of events stuck
+  until a restart. A small watchdog fixed it, and now the test passes.
+- **Check your judge.** An LLM grader I relied on barely agreed with human
+  labels, so I stopped publishing its score.
+- **Make every alert fire at least once.** Two of mine were loaded, "healthy"
+  and could never fire. I only found out by causing the failures on purpose.
+- **Isolation has to reach the search index too.** My vector search was
+  leaking ranking statistics between tenants, even though the rows were
+  filtered correctly.
+- **Delete the advice that doesn't pay.** Reranking is standard advice, but
+  it didn't move recall on my data, so it went. The write-up keeps the
+  experiment, not just the conclusion.
 
 </details>
-
-## Toolkit
-
-| | |
-| --- | --- |
-| **Languages** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) |
-| **AI** | ![Anthropic](https://img.shields.io/badge/Anthropic_Claude-191919?style=flat&logo=anthropic&logoColor=white) ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat) ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat&logo=googlegemini&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat&logo=langgraph&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-000000?style=flat&logo=modelcontextprotocol&logoColor=white) ![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=flat&logo=qdrant&logoColor=white) |
-| **Backend** | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=springboot&logoColor=white) ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat&logo=nestjs&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat&logo=nodedotjs&logoColor=white) ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat&logo=graphql&logoColor=white) ![gRPC](https://img.shields.io/badge/gRPC-244C5A?style=flat) ![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat&logo=apachekafka&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat&logo=redis&logoColor=white) |
-| **Data** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white) ![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=flat) |
-| **Infrastructure** | ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white) ![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat&logo=terraform&logoColor=white) ![Argo CD](https://img.shields.io/badge/Argo_CD-EF7B4D?style=flat&logo=argo&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white) ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white) |
-| **Frontend** | ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white) ![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white) |
-| **Security** | ![CEH v11](https://img.shields.io/badge/CEH_v11-2E3440?style=flat) ![OWASP](https://img.shields.io/badge/OWASP_LLM_Top_10-000000?style=flat&logo=owasp&logoColor=white) ![B.E. Information Security](https://img.shields.io/badge/B.E._Information_Security-1E768F?style=flat) |
 
 ## Latest writing
 
@@ -141,13 +172,16 @@ Sends webhooks and never loses one, even when Redis is wiped mid-load.
 - [Caching is the easy 80%. Knowing when a cached answer is a lie is the hard 20%](https://rishabh0111.github.io/blogs/system-design-caching/)
 - [A product catalog and a bank ledger have no business living in the same kind of database](https://rishabh0111.github.io/blogs/system-design-databases-nosql/)<!-- BLOG-POST-LIST:END -->
 
-<sub>Plus a ten-part System Design series and a 19-part DSA series. [All posts →](https://rishabh0111.github.io/blogs/)</sub>
+<sub>[All posts →](https://rishabh0111.github.io/blogs/)</sub>
 
-## Off the clock
+## Say hi
 
-Chess · technical writing · 10-finger typing · poking around other people's infrastructure
+Happy to talk about LLM evals, Postgres, distributed systems or Kubernetes,
+or to hear what you're building. Open an issue on any repo, or
+[email me](mailto:rishabhsharma8912@gmail.com).
 
-## Contributions
+Off the clock: chess, technical writing, 10-finger typing, and poking around
+other people's infrastructure.
 
 <!-- Drawn daily by .github/workflows/snake.yml onto the `output` branch. -->
 <picture>

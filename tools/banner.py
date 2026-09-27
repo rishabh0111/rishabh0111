@@ -22,17 +22,18 @@ THEMES = {
 }
 
 PHRASES = [
-    "I ship AI systems to production.",
-    "I measure them before I trust them.",
-    "I design so the mistake can't happen.",
+    "I build LLM systems and the plumbing under them.",
     "I write about what breaks, and why.",
+    "Everything here is open source.",
+    "Questions and pull requests welcome.",
 ]
 
-METRICS = [
-    ("0",     "of 50,000 events lost"),
-    ("211",   "tests on every push"),
-    ("$3.32", "for 12 hours on AWS EKS"),
-    ("40+",   "posts on the blog"),
+# What I'm up to, not a scoreboard: a kind and a line each.
+NOW = [
+    ("BUILDING", "AI that knows when to stop"),
+    ("WRITING",  "System Design and DSA, free"),
+    ("LEARNING", "fine-tuning and OpenTelemetry"),
+    ("ASK ME",   "evals, Postgres, Kubernetes"),
 ]
 
 MONO = "'Martian Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
@@ -114,19 +115,19 @@ def render(name, c):
     cvals, ckeys = discrete(cursor_pts, total)
 
     pills = []
-    for k, (fig, label) in enumerate(METRICS):
+    for k, (kind, label) in enumerate(NOW):
         y = 58 + k * 60
         pills.append(
             '<g transform="translate(852 %d)" opacity="0">'
             '<animate attributeName="opacity" from="0" to="1" begin="%.1fs" dur="0.6s" fill="freeze"/>'
             '<rect width="364" height="46" rx="10" fill="%s" fill-opacity="0.88" stroke="%s"/>'
             '<rect x="0" y="10" width="3" height="26" rx="1.5" fill="%s"/>'
-            '<text x="22" y="30" class="sans" font-size="21" font-weight="700" fill="%s">%s</text>'
-            '<text x="104" y="29" class="mono" font-size="13.5" fill="%s" textLength="%.1f" lengthAdjust="spacingAndGlyphs">%s</text>'
-            '</g>' % (y, 0.4 + k * 0.25, c["raised"], c["line"], c["accent"], c["ink"], fig, c["ink3"],
+            '<text x="20" y="28" class="mono" font-size="11" letter-spacing="2" fill="%s" font-weight="600">%s</text>'
+            '<text x="116" y="28.5" class="mono" font-size="13.5" fill="%s" textLength="%.1f" lengthAdjust="spacingAndGlyphs">%s</text>'
+            '</g>' % (y, 0.4 + k * 0.25, c["raised"], c["line"], c["accent"], c["accent"], kind, c["ink2"],
                       len(label) * 13.5 * 0.6, label))
 
-    svg = """<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Rishabh Sharma, AI engineer. I ship AI systems to production and measure them before I trust them.">
+    svg = """<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Rishabh Sharma, AI engineer. I build LLM systems and the plumbing under them, and write about what breaks.">
   <style>
     .mono {{ font-family: {MONO}; }}
     .sans {{ font-family: {SANS}; }}
