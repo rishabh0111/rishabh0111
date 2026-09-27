@@ -134,7 +134,8 @@ Sends webhooks and never loses one, even when Redis is wiped mid-load.
 ## Latest writing
 
 <!-- Kept current by .github/workflows/latest-posts.yml from the site's feed. -->
-<!-- BLOG-POST-LIST:START -->- [I built a production-grade ledger in Java 21 and Spring Boot 4 where money can’t go missing](https://rishabh0111.github.io/blogs/multitenant-double-entry-ledger/)
+<!-- BLOG-POST-LIST:START -->
+- [I built a production-grade ledger in Java 21 and Spring Boot 4 where money can’t go missing](https://rishabh0111.github.io/blogs/multitenant-double-entry-ledger/)
 - [Every chat message needs an ID nobody coordinated on, and every request needs a caller nobody can fake](https://rishabh0111.github.io/blogs/system-design-distributed-primitives/)
 - [An order confirmation email should never be the reason a checkout button spins for three seconds](https://rishabh0111.github.io/blogs/system-design-async/)
 - [Caching is the easy 80%. Knowing when a cached answer is a lie is the hard 20%](https://rishabh0111.github.io/blogs/system-design-caching/)
