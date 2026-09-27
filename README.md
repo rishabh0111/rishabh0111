@@ -13,39 +13,13 @@
   <a href="mailto:rishabhsharma8912@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white"></a>
 </p>
 
-AI engineer in Gurugram. I ship LLM systems to production, along with the
-backends and infrastructure under them, and I measure them before I trust
-them. I trained in information security, so I ask how something breaks
-before I ask when it ships.
+AI engineer in Gurugram. I build LLM systems and the backends and
+infrastructure under them, and I measure them before I trust them. I trained
+in information security, so I ask how something breaks before I ask when it
+ships.
 
-> [!NOTE]
-> Every number on this page comes from a test, a benchmark, an eval or a
-> production dashboard. The ones from public repos can be re-run from a
-> clean clone.
-
-## Now: AI Engineer at Kleeto
-
-Four AI systems shipped since May 2026, three in production and one piloting.
-The work is private; the numbers are from production.
-
-| System | What it does | Measured |
-| --- | --- | --- |
-| **HR assistant** | An AI agent across the HR platform: hiring, onboarding, attendance, payroll, leaving and documents, with 18 tools over MCP and RAG over 500,000 documents | **500+** employees · **85%+** eval-verified task completion · **0** successful prompt injections |
-| **Document verification** | GPT-4o reads every onboarding document; a rule engine decides and tells the candidate exactly what to fix | **5,500** documents a month · **82%** accepted automatically · **2** enterprise clients |
-| **TheMask** | Masks government ID numbers before archiving, so a server breach reveals nothing; the customer can still recover theirs | **30,000** documents masked · no database, no stored files |
-| **Kleeto AI Slides** | A real-time voice presenter in English and Hindi that answers only from the company's own documents, with citations | **3** pilot customers · **1,000+** tests |
-
-The rule every one of them follows:
-
-```mermaid
-%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#E5E9F0", "primaryTextColor": "#2E3440", "primaryBorderColor": "#1E768F", "lineColor": "#88C0D0", "edgeLabelBackground": "#ECEFF4", "fontFamily": "ui-monospace, SFMono-Regular, Menlo, monospace"}}}%%
-flowchart LR
-    Q([Request]) --> M[Model reads<br/>and proposes]
-    M --> C{Code decides<br/>rules · tests · evals}
-    C -- safe --> A([Answer])
-    C -- sensitive or unsure --> P[A person approves]
-    P --> A
-```
+By day I'm an AI engineer at Kleeto. The rest of the time I build things
+in the open, write about what broke, and play chess.
 
 ## Projects
 
@@ -168,6 +142,10 @@ Sends webhooks and never loses one, even when Redis is wiped mid-load.
 <!-- BLOG-POST-LIST:END -->
 
 <sub>Plus a ten-part System Design series and a 19-part DSA series. [All posts →](https://rishabh0111.github.io/blogs/)</sub>
+
+## Off the clock
+
+Chess · technical writing · 10-finger typing · poking around other people's infrastructure
 
 ## Contributions
 

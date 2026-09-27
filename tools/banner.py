@@ -25,14 +25,14 @@ PHRASES = [
     "I ship AI systems to production.",
     "I measure them before I trust them.",
     "I design so the mistake can't happen.",
-    "4 AI systems shipped at Kleeto since May 2026.",
+    "I write about what breaks, and why.",
 ]
 
 METRICS = [
-    ("4",     "AI systems shipped in 2026"),
-    ("500+",  "employees on the HR agent"),
-    ("0",     "prompt injections that worked"),
+    ("0",     "of 50,000 events lost"),
+    ("211",   "tests on every push"),
     ("$3.32", "for 12 hours on AWS EKS"),
+    ("40+",   "posts on the blog"),
 ]
 
 MONO = "'Martian Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
