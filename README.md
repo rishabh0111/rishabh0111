@@ -139,8 +139,7 @@ Sends webhooks and never loses one, even when Redis is wiped mid-load.
 - [Every chat message needs an ID nobody coordinated on, and every request needs a caller nobody can fake](https://rishabh0111.github.io/blogs/system-design-distributed-primitives/)
 - [An order confirmation email should never be the reason a checkout button spins for three seconds](https://rishabh0111.github.io/blogs/system-design-async/)
 - [Caching is the easy 80%. Knowing when a cached answer is a lie is the hard 20%](https://rishabh0111.github.io/blogs/system-design-caching/)
-- [A product catalog and a bank ledger have no business living in the same kind of database](https://rishabh0111.github.io/blogs/system-design-databases-nosql/)
-<!-- BLOG-POST-LIST:END -->
+- [A product catalog and a bank ledger have no business living in the same kind of database](https://rishabh0111.github.io/blogs/system-design-databases-nosql/)<!-- BLOG-POST-LIST:END -->
 
 <sub>Plus a ten-part System Design series and a 19-part DSA series. [All posts →](https://rishabh0111.github.io/blogs/)</sub>
 
