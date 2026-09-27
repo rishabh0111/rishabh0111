@@ -38,6 +38,7 @@ The work is private; the numbers are from production.
 The rule every one of them follows:
 
 ```mermaid
+%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#E5E9F0", "primaryTextColor": "#2E3440", "primaryBorderColor": "#1E768F", "lineColor": "#88C0D0", "edgeLabelBackground": "#ECEFF4", "fontFamily": "ui-monospace, SFMono-Regular, Menlo, monospace"}}}%%
 flowchart LR
     Q([Request]) --> M[Model reads<br/>and proposes]
     M --> C{Code decides<br/>rules · tests · evals}
