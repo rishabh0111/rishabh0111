@@ -1,0 +1,23 @@
+# Refreshes the "Latest writing" list from the portfolio's feed.
+name: Latest posts
+
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://rishabh0111.github.io/feed.xml"
+          max_post_count: 5
+          template: "- [$title]($url)$newline"
+          commit_message: "docs: refresh latest posts"
