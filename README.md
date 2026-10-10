@@ -76,7 +76,7 @@ evals, guardrails or multi-tenant Postgres.
 ![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=flat&logo=qdrant&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 
-[AI layer](https://github.com/rishabh0111/nivara-ai) · [API](https://github.com/rishabh0111/nivara-api-nestjs) · [Front ends](https://github.com/rishabh0111/nivara-web-nextjs) · [Try it](https://nivara-web-nextjs.vercel.app/dashboard) · [Evals write-up](https://rishabh0111.github.io/blogs/evals-for-an-llm-agent/)
+[AI layer](https://github.com/rishabh0111/nivara-ai) · [API](https://github.com/rishabh0111/nivara-api-nestjs) · [Front ends](https://github.com/rishabh0111/nivara-web-nextjs) · [Watch it (45 s)](https://rishabh0111.github.io/assets/img/home/projects/nivara/walkthrough.mp4) · [Try it, signed in](https://nivara-web-nextjs.vercel.app/dashboard?demo) · [Evals write-up](https://rishabh0111.github.io/blogs/evals-for-an-llm-agent/)
 
 </td>
 <td width="50%" valign="top">
@@ -128,7 +128,7 @@ can replay from a dashboard.
 ![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat&logo=redis&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 
-[Source](https://github.com/rishabh0111/webhook-delivery-engine) · [Try it](https://webhook-delivery-engine-on21.onrender.com/dashboard) · [Write-up](https://rishabh0111.github.io/blogs/webhook-delivery-engine/)
+[Source](https://github.com/rishabh0111/webhook-delivery-engine) · [Watch it (20 s)](https://rishabh0111.github.io/assets/img/home/projects/webhook/tour.mp4) · [Try it](https://webhook-delivery-engine-on21.onrender.com/dashboard) · [Write-up](https://rishabh0111.github.io/blogs/webhook-delivery-engine/)
 
 </td>
 </tr>
