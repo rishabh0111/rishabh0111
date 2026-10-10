@@ -2,7 +2,7 @@
 <a href="https://rishabh0111.github.io/">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-    <img alt="Rishabh Sharma. I build LLM systems and the plumbing under them, and write about what breaks." src="assets/banner-light.svg" width="100%">
+    <img alt="Rishabh Sharma, at a desk: a laptop mid-keystroke, a steaming mug, a plant, and a chess game in progress." src="assets/banner-light.svg" width="100%">
   </picture>
 </a>
 
