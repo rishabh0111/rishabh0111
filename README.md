@@ -63,7 +63,7 @@ reversed.
 <tr>
 <td width="50%" valign="top">
 
-### [Nivara Desk](https://nivara-landing-iota.vercel.app)
+### [Nivara Desk](https://nivara-desk.vercel.app)
 
 A help desk many companies share, where the AI answers only when it's sure
 and hands everything else to a person. A good read if you're figuring out
