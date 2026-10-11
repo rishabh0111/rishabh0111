@@ -166,11 +166,11 @@ networking from the basics up
 
 <!-- Kept current by .github/workflows/latest-posts.yml from the site's feed. -->
 <!-- BLOG-POST-LIST:START -->
-- [I built a production-grade ledger in Java 21 and Spring Boot 4 where money can’t go missing](https://rishabh0111.github.io/blogs/multitenant-double-entry-ledger/)
-- [Every chat message needs an ID nobody coordinated on, and every request needs a caller nobody can fake](https://rishabh0111.github.io/blogs/system-design-distributed-primitives/)
-- [An order confirmation email should never be the reason a checkout button spins for three seconds](https://rishabh0111.github.io/blogs/system-design-async/)
-- [Caching is the easy 80%. Knowing when a cached answer is a lie is the hard 20%](https://rishabh0111.github.io/blogs/system-design-caching/)
-- [A product catalog and a bank ledger have no business living in the same kind of database](https://rishabh0111.github.io/blogs/system-design-databases-nosql/)<!-- BLOG-POST-LIST:END -->
+- [A message queue is a log that only grows and one number per consumer group. Every guarantee is a rule about when that number moves](https://rishabh0111.github.io/blogs/lld-pub-sub-queue/)
+- [Stock is not a counter you decrement. It’s three numbers, and every order moves units between them in one atomic step](https://rishabh0111.github.io/blogs/lld-inventory-management/)
+- [Splitwise is a ledger that must balance to the last paisa. Splitting the bill is the easy part](https://rishabh0111.github.io/blogs/lld-splitwise/)
+- [A file system is one tree and one path walk. Every command is that walk plus a few lines, and Composite keeps them few](https://rishabh0111.github.io/blogs/lld-file-system/)
+- [A log call should cost one comparison when it’s off and never block when it’s on. The rest of a logging framework is plumbing](https://rishabh0111.github.io/blogs/lld-logging-service/)<!-- BLOG-POST-LIST:END -->
 
 <sub>[All posts →](https://rishabh0111.github.io/blogs/)</sub>
 
